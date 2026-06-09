@@ -50,13 +50,13 @@ El informe está diseñado con enfoque ejecutivo para facilitar la toma de decis
 
 ## 🔎 Principales Hallazgos
 
-✅ **Executive Office lidera en compensación** con un sueldo promedio de $124.304, seguido de Sales ($108.962) y Software Engineering ($90.164).
+✅ **Executive Office lidera en compensación** con un sueldo promedio de $124.304, seguido de Sales ($108.963) y Software Engineering ($90.165).
 
-📊 **Production es el departamento más grande** con 73 empleados (37,6% del total), aunque su sueldo promedio ($61.737) está por debajo del promedio organizacional ($74.721).
+📊 **Production es el departamento más grande** con 73 empleados (37,6% del total), aunque su sueldo promedio ($61.738) está por debajo del promedio organizacional ($74.722).
 
-🏆 **Admin Offices tiene la evaluación más alta** con 8,27 sobre 10, superando incluso al Executive Office (8,05), lo que sugiere un equipo de alto desempeño con compensación por debajo de su aporte.
+🏆 **Admin Offices tiene la evaluación más alta** con 8,3 sobre 10, superando incluso al Executive Office (8,0), lo que sugiere un equipo de alto desempeño con compensación por debajo de su aporte.
 
-⚠️ **Sales registra la evaluación más baja** (6,88) siendo a su vez el segundo departamento mejor remunerado, lo que podría indicar una oportunidad de revisión en la política de compensación variable.
+⚠️ **Sales registra la evaluación más baja** (6,9) siendo a su vez el segundo departamento mejor remunerado, lo que podría indicar una oportunidad de revisión en la política de compensación variable.
 
 👩‍💼 **Las mujeres representan el 55,7% del personal** (108 de 194) y tienen una evaluación promedio superior (7,62 vs. 7,49), aunque perciben un sueldo promedio menor ($71.160 vs. $79.194), una brecha del 10,2% respecto a los hombres.
 
@@ -69,16 +69,22 @@ El informe está diseñado con enfoque ejecutivo para facilitar la toma de decis
 ## 🧮 Medidas DAX Implementadas
 
 ```dax
-Total Empleados = DISTINCTCOUNT('Tabla Empleados'[ID Empleado])
+Total Empleados = COUNTROWS('Tabla Empleados')
 
 Edad Promedio = AVERAGE('Tabla Empleados'[Edad])
 
-Evaluacion Promedio = AVERAGE('Tabla Evaluacion'[Evaluación])
+Evaluacion Promedio = AVERAGEX(
+    'Tabla Evaluacion',
+    VALUE('Tabla Evaluacion'[Evaluación])
+)
 
 Sueldo Promedio = 
-CALCULATE(
-    AVERAGE('Tabla Sueldo'[Sueldo]),
-    'Tabla Sueldo'[Sueldo] > 0
+AVERAGEX(
+    FILTER(
+        'Tabla Sueldo',
+        'Tabla Sueldo'[Sueldo] > 0
+    ),
+    'Tabla Sueldo'[Sueldo]
 )
 ```
 
@@ -105,7 +111,7 @@ Relaciones: `Tabla Evaluacion` y `Tabla Sueldo` → `Tabla Empleados` a través 
 
 ## 🧩 Habilidades Aplicadas
 
-- DAX (Data Analysis Expressions)
+- DAX
 - Columnas calculadas
 - Modelado de datos relacional
 - Diseño de visualizaciones ejecutivas
