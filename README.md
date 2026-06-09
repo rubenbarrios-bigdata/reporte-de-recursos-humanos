@@ -4,6 +4,8 @@
 ![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)
 ![Status](https://img.shields.io/badge/Estado-Completado-brightgreen?style=for-the-badge)
 
+https://app.powerbi.com/groups/me/reports/56cff9aa-1f2e-481e-b4ae-432e294ea34c/02c551d346eaf7b05eb2?redirectedFromSignup=1&experience=power-bi
+
 ---
 
 ## 📌 Descripción del Proyecto
