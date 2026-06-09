@@ -29,9 +29,9 @@ El informe está diseñado con enfoque ejecutivo para facilitar la toma de decis
 | Indicador | Valor |
 |---|---|
 | Total Empleados | 194 |
-| Edad Promedio | 45,88 años |
-| Evaluación Promedio | 7,56 / 10 |
-| Sueldo Promedio | $74.721 |
+| Edad Promedio | 46 años |
+| Evaluación Promedio | 7,6 |
+| Sueldo Promedio | $75.000 |
 
 ---
 
