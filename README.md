@@ -171,7 +171,7 @@ Este tipo de análisis es útil para:
 Proyecto práctico desarrollado como parte de mi crecimiento profesional en análisis de datos y Business Intelligence.
 
 Fuente de los datos:
-Datdata
+Academia Datdata
 
 ---
 
