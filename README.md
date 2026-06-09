@@ -170,6 +170,10 @@ Este tipo de análisis es útil para:
 **Ruben Barrios**
 Proyecto práctico desarrollado como parte de mi crecimiento profesional en análisis de datos y Business Intelligence.
 
+Fuente de los datos:
+
+Datdata
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ruben-barrios-1430712ab)
 
 ---
